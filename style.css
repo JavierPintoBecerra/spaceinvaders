@@ -26,8 +26,12 @@ body{
     border-radius: 5px;
 }
 
-.exploded-invader{
+.exploded-spaceship{
     background-color: red;
+}
+
+.exploded-invader{
+    background-color: rgb(255, 81, 0);
 }
 
 .laser{
