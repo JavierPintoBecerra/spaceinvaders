@@ -26,6 +26,7 @@
             15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25,
             30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40,]; 
         //Renders invaders on game-board
+        const totalInvaders = invader.length;
         invader.forEach((invader) => {
             cells[invadersPosition + invader].classList.add('invader');    // You can remove invaderPosition from the brackets and it will work.
         });
@@ -95,7 +96,7 @@
                 // Verificar si todos los invasores han sido destruidos
                 console.log("number of invaders destroyed",destroyedInvaders.length);
                 console.log("number of invaders",invader.length);
-                if (destroyedInvaders.length === invader.length) {
+                if (destroyedInvaders.length ===totalInvaders) {
                     result.textContent = 'YOU WIN';
                     clearInterval(invaderId); // Detener el movimiento de los invasores
                 }
